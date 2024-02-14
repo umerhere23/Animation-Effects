@@ -17,17 +17,18 @@ body {
     width: 100px;
     height: 100px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .ring {
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 130px;
+    height: 130px;
     border: 8px solid transparent;
     border-radius: 50%;
-    animation: colorChange 4s linear infinite, rotate 2s linear infinite;
+    animation: colorChange 5s linear infinite, rotate 2s linear infinite;
 }
 
 @keyframes colorChange {
@@ -52,4 +53,10 @@ body {
     100% {
         transform: rotate(360deg);
     }
+}
+
+p {
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
 }
