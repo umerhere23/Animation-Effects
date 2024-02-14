@@ -27,19 +27,22 @@ body {
     height: 80px;
     border: 8px solid transparent;
     border-radius: 50%;
-    animation: rotate 2s linear infinite;
+    animation: colorChange 4s linear infinite, rotate 2s linear infinite;
 }
 
-.red {
-    border-top-color: red;
-}
-
-.green {
-    border-top-color: green;
-}
-
-.blue {
-    border-top-color: blue;
+@keyframes colorChange {
+    0%, 100% {
+        border-top-color: blue;
+    }
+    25% {
+        border-top-color: red;
+    }
+    50% {
+        border-top-color: green;
+    }
+    75% {
+        border-top-color: yellow;
+    }
 }
 
 @keyframes rotate {
